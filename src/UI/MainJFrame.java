@@ -4,6 +4,7 @@
  */
 package UI;
 import Model.Person;
+import Model.Address;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
 /**
@@ -15,8 +16,13 @@ public class MainJFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainJFrame
      */
+    private Person person;
+    private Address address;
     public MainJFrame() {
         initComponents();
+        this.person = new Person();
+        this.address = new Address();
+         
     }
 
     /**
@@ -84,6 +90,26 @@ public class MainJFrame extends javax.swing.JFrame {
         viewPermanentApt = new javax.swing.JLabel();
         viewPermanentCity = new javax.swing.JLabel();
         viewPermanentZip = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -302,126 +328,223 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel24))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSave)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(255, 153, 153));
 
-        viewStudentNUID.setText("View Student NUID");
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setText("*** Student’s information Shown Here ***");
 
-        viewFirstName.setText("View First Name");
+        jLabel8.setText("Your NUID:");
 
-        viewLastName.setText("Last Name");
+        jLabel9.setText("Your First Name:");
 
-        viewCollegeName.setText("College Name");
+        jLabel17.setText("Your Last Name:");
 
-        viewOfficePhone.setText("Office Phone");
+        jLabel18.setText("Your College Name:");
 
-        viewOfficeEmail.setText("Office Email ID");
+        jLabel25.setText("Your Office Phone:");
 
-        viewPersonalPhone.setText("Personal Phone");
+        jLabel26.setText("Your Office Email:");
 
-        viewPersonalEmail.setText("Personal Email ID");
+        jLabel27.setText("Your Personal Phone:");
 
-        viewCuurentStreet.setText("Street Name");
+        jLabel28.setText("Your Personal Email:");
 
-        viewCurrentApt.setText("Apt. No");
+        jLabel29.setText("Your Zip Code:");
 
-        viewCurrentCity.setText("City/State");
+        jLabel30.setText("Your City/State:");
 
-        viewCurrentZip.setText("Zip Code");
+        jLabel31.setText("Your Apt. No:");
 
-        viewPermanentStreet.setText("Street Name");
+        jLabel32.setText("Your Street Name:");
 
-        viewPermanentApt.setText("Apt. No");
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel33.setText("*** Current Address Information Shown Here ***");
 
-        viewPermanentCity.setText("City/State");
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel34.setText("*** Contact Information Shown Here ***");
 
-        viewPermanentZip.setText("Zip Code");
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel35.setText("*** Permanent Address Information Shown Here***");
+
+        jLabel36.setText("Your Zip Code:");
+
+        jLabel37.setText("Your City/State:");
+
+        jLabel38.setText("Your Apt. No:");
+
+        jLabel39.setText("Your Street Name:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
+                .addGap(11, 11, 11)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(13, 13, 13)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(viewStudentNUID)
-                                    .addGap(13, 13, 13))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(viewLastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(viewCollegeName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(viewFirstName, javax.swing.GroupLayout.Alignment.LEADING))
-                                    .addGap(4, 4, 4))))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(viewOfficePhone)
-                                    .addGap(29, 29, 29))
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(viewPersonalPhone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(viewPersonalEmail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                        .addComponent(viewOfficeEmail)
-                                        .addGap(19, 19, 19))))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
+                        .addComponent(jLabel26)
+                        .addGap(18, 18, 18)
+                        .addComponent(viewOfficeEmail))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(viewOfficePhone))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(viewCurrentApt)
+                            .addComponent(jLabel32)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabel30)
+                            .addComponent(jLabel29))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(viewCuurentStreet)
-                            .addComponent(viewCurrentCity)
-                            .addComponent(viewCurrentZip)))
-                    .addComponent(viewPermanentApt)
-                    .addComponent(viewPermanentStreet)
-                    .addComponent(viewPermanentCity)
-                    .addComponent(viewPermanentZip))
-                .addContainerGap(154, Short.MAX_VALUE))
+                            .addComponent(viewCurrentApt)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(viewCurrentZip)
+                                .addComponent(viewCurrentCity)))))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel35))
+                .addContainerGap(39, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel28)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel37)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(viewPermanentCity))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viewPermanentStreet))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel38)
+                                .addGap(18, 18, 18)
+                                .addComponent(viewPermanentApt))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel36)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(viewPermanentZip)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(viewLastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(viewCollegeName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(viewFirstName, javax.swing.GroupLayout.Alignment.LEADING)))
+                            .addComponent(viewStudentNUID))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(viewPersonalPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(viewPersonalEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(viewStudentNUID)
+                .addContainerGap()
+                .addComponent(jLabel7)
+                .addGap(4, 4, 4)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewStudentNUID)
+                    .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewFirstName)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewFirstName)
+                    .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewLastName)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewLastName)
+                    .addComponent(jLabel17))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewCollegeName)
-                .addGap(38, 38, 38)
-                .addComponent(viewOfficePhone)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewOfficeEmail)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewPersonalPhone)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewPersonalEmail)
-                .addGap(82, 82, 82)
-                .addComponent(viewCuurentStreet)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewCurrentApt)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewCollegeName)
+                    .addComponent(jLabel18))
+                .addGap(32, 32, 32)
+                .addComponent(jLabel34)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(viewCurrentCity)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(viewOfficePhone))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(viewOfficeEmail))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(viewPersonalPhone))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(viewPersonalEmail))
+                .addGap(14, 14, 14)
+                .addComponent(jLabel33)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(viewCurrentZip)
-                .addGap(68, 68, 68)
-                .addComponent(viewPermanentStreet)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(viewCuurentStreet))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel31)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel30)
+                            .addComponent(viewCurrentCity))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(viewCurrentApt)
+                        .addGap(4, 4, 4)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(viewCurrentZip))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel35)
+                .addGap(7, 7, 7)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewPermanentStreet)
+                    .addComponent(jLabel39))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewPermanentApt)
+                    .addComponent(jLabel38))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewPermanentCity)
+                    .addComponent(jLabel37))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(viewPermanentApt)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(viewPermanentCity)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(viewPermanentZip)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewPermanentZip)
+                    .addComponent(jLabel36))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         jSplitPane1.setRightComponent(jPanel2);
@@ -444,8 +567,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
-        Person person = new Person();
-         
+//        Person person = new Person();
+//        Address address = new Address();
+        
         String studentNUID = txtNUID.getText();
         String fName = txtFirstName.getText();
         String lName = txtLastName.getText();
@@ -461,58 +585,45 @@ public class MainJFrame extends javax.swing.JFrame {
         String personalEmail = txtPersonalPhone.getText();
         String officeEmail = txtOfficePhone.getText();
         
-        person.setStudentNUID(studentNUID);
-        viewStudentNUID.setText(studentNUID);
+        this.person.setStudentNUID(studentNUID);
+        this.person.setFirstName(fName);
+        this.person.setLastName(lName);
+        this.person.setCollegeName(_clgName);
+        this.person.setOfficeNumber(txtOfficePhone.getText());
+        this.person.setPersonalNumber(txtPersonalPhone.getText());
+        this.person.setPersonalEmail(txtPersonalEmail.getText());
+        this.person.setOfficeEmail(txtOfficeEmail.getText());
         
-        person.setFirstName(fName);
-        viewFirstName.setText(fName);
-        
-        person.setLastName(lName);
-        viewLastName.setText(lName);
-   
-        person.setCollegeName(_clgName);
-        viewCollegeName.setText(_clgName);
-        
-        person.setOfficeNumber(txtOfficePhone.getText());
-        viewOfficePhone.setText(txtOfficePhone.getText());
-        
-        
-        person.setPersonalNumber(txtPersonalPhone.getText());
-        viewPersonalPhone.setText(txtPersonalPhone.getText());
-        
-        person.setPersonalEmail(txtPersonalEmail.getText());
-        viewPersonalEmail.setText(txtPersonalEmail.getText());
-
-        person.setOfficeEmail(txtOfficeEmail.getText());
-        viewOfficeEmail.setText(txtOfficeEmail.getText());
-        
-        person.setCurrentApt(currentApt);
-        viewCurrentApt.setText(currentApt);
-        
-        person.setCurrentStreet(currentStreet);
-        viewCuurentStreet.setText(currentStreet);
-        
-        person.setCurrentCity(currentCity);
-        viewCurrentCity.setText(currentCity);
-        
-        person.setCurrentZip(currentZip);
-        viewCurrentZip.setText(currentZip);
-        
-        
-        person.setPermanentApt(permanentApt);
-        viewPermanentApt.setText(permanentApt);
-        
-        person.setPermanentStreet(permanentStreet);
-        viewPermanentStreet.setText(permanentStreet);
-        
-        person.setPermanentCity(permanentCity);
-        viewPermanentCity.setText(permanentCity);
-        
-        person.setPermanentZip(permanentZip);
-        viewPermanentZip.setText(permanentZip);
+        Address address = this.person.getAddress();
+        address.setCurrentApt(currentApt);
+        address.setCurrentStreet(currentStreet);
+        address.setCurrentCity(currentCity);
+        address.setCurrentZip(currentZip);
+        address.setPermanentApt(permanentApt);
+        address.setPermanentCity(permanentCity);
+        address.setPermanentStreet(permanentStreet);
+        address.setPermanentZip(permanentZip);
+        display();
         
     }//GEN-LAST:event_btnSaveActionPerformed
-
+    private void display(){
+        viewStudentNUID.setText(this.person.getStudentNUID());
+        viewFirstName.setText(this.person.getFirstName());  
+        viewLastName.setText(this.person.getLastName());     
+        viewCollegeName.setText(this.person.getCollegeName());    
+        viewOfficePhone.setText(this.person.getOfficeNumber());  
+        viewPersonalPhone.setText(this.person.getPersonalNumber());
+        viewPersonalEmail.setText(this.person.getPersonalEmail());
+        viewOfficeEmail.setText(this.person.getOfficeEmail());
+        viewCurrentApt.setText(this.person.getAddress().getCurrentApt());
+        viewCuurentStreet.setText(this.person.getAddress().getCurrentStreet());
+        viewCurrentCity.setText(this.person.getAddress().getCurrentCity());
+        viewPermanentApt.setText(this.person.getAddress().getPermanentApt());
+        viewPermanentStreet.setText(this.person.getAddress().getPermanentStreet());
+        viewPermanentCity.setText(this.person.getAddress().getPermanentCity());
+        viewPermanentZip.setText(this.person.getAddress().getPermanentZip());
+        viewCurrentZip.setText(this.person.getAddress().getCurrentZip());
+    }
     private void txtOfficePhoneKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtOfficePhoneKeyPressed
         // TODO add your handling code here:
         String _officePhNumber = txtOfficePhone.getText();
@@ -578,6 +689,8 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -585,10 +698,28 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane1;

@@ -17,14 +17,7 @@ public class Person {
     String officeEmail;
     String personalNumber;
     String personalEmail;
-    String currentApt;
-    String currentStreet;
-    String currentCity;
-    String currentZip;
-    String permanentApt;
-    String permanentStreet;
-    String permanentCity;
-    String permanentZip;
+    Address address;
     
     public Person(){
         this.studentNUID = "";
@@ -35,14 +28,7 @@ public class Person {
         this.officeEmail= "";
         this.personalNumber= "";
         this.personalEmail="";
-        this.currentApt = "";
-        this.currentStreet= "";
-        this.currentCity = "";
-        this.currentZip = "";
-        this.permanentApt = "";
-        this.permanentStreet = "";
-        this.permanentCity= "";
-        this.permanentZip= "";
+        this.address = new Address();
     }
 
     public String getStudentNUID() {
@@ -109,68 +95,12 @@ public class Person {
         this.personalEmail = personalEmail;
     }
 
-    public String getCurrentApt() {
-        return currentApt;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setCurrentApt(String currentApt) {
-        this.currentApt = currentApt;
-    }
-
-    public String getCurrentStreet() {
-        return currentStreet;
-    }
-
-    public void setCurrentStreet(String currentStreet) {
-        this.currentStreet = currentStreet;
-    }
-
-    public String getCurrentCity() {
-        return currentCity;
-    }
-
-    public void setCurrentCity(String currentCity) {
-        this.currentCity = currentCity;
-    }
-
-    public String getCurrentZip() {
-        return currentZip;
-    }
-
-    public void setCurrentZip(String currentZip) {
-        this.currentZip = currentZip;
-    }
-
-    public String getPermanentApt() {
-        return permanentApt;
-    }
-
-    public void setPermanentApt(String permanentApt) {
-        this.permanentApt = permanentApt;
-    }
-
-    public String getPermanentStreet() {
-        return permanentStreet;
-    }
-
-    public void setPermanentStreet(String permanentStreet) {
-        this.permanentStreet = permanentStreet;
-    }
-
-    public String getPermanentCity() {
-        return permanentCity;
-    }
-
-    public void setPermanentCity(String permanentCity) {
-        this.permanentCity = permanentCity;
-    }
-
-    public String getPermanentZip() {
-        return permanentZip;
-    }
-
-    public void setPermanentZip(String permanentZip) {
-        this.permanentZip = permanentZip;
+    public void setAddress(Address address) {
+        this.address = address;
     }
     
 }
